@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    margin-top: 10px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
+#header{
+    background-image: url(corona.jpg);
+    background-size: auto;
+    height: 80px;
+    margin: 10px;
+}
+
+.data_get {
+    padding: 20px;
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: 15px 10px 0px #bebebe,
+        -0px -5px 2px #ffffff;
+}
+
+#datefront {
+    padding: 15px;
+    color: red;
+    margin-left: 20%;
+}
+
+#available_capacity_dose1 {
+    background-color: red;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: white;
+}
+
+#maincontent {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 5px;
+    /* margin-top: 15px; */
+    height: 100%;
+    overflow: scroll;
+    margin: 15px;
+}
+
+#timeline{
+    /* display: flex; */
+    margin: 15px 12px;
+}
+button{
+    margin: 0px 50px;
+    border: 2px solid rgb(114, 114, 255);
+    font-size: 19.2px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 4px 0px #bebebe,
+        -0px -5px 5px #ffffff;
+}
+button:hover{
+    background-color: blueviolet;
+    color: wheat;
+}
+
+footer{
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100px;
+}
+
+a{
+    color: rgb(241, 200, 137);
+    text-decoration: none;
+}
+
+p{
+    margin: 8px;
+}
+
+input,select{
+    border: 2px solid black
+}
+input,select:hover{
+    border: 2px solid rgb(243, 243, 243);
+}
+
+@media only screen and ( max-width: 600px){
+    h2 {
+        font-size: 25px ;
+        padding: 25px;
+    }
+
+    .data_get {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    #datefront {
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .container {
+        border: 2px solid black;
+        margin-top: 15px;
+        height: fit-content;
+        overflow: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    button{
+        margin: 0px 5px;
+        font-size: 13px;
+    }
+    #timeline{
+        margin: 15px 25px;
+    }
+    
+    #slotscheck{
+        font-size: 10px;
+    }
+}
